@@ -16,9 +16,8 @@ Verbose logging is reccomended to be set to `True` as the zip folder take time t
 
 ## Downloads folder
 - Can be named whatever so long as the `DOWNLOADS_FOLDER` variable points to it correctly same for the `path` variable for the function `download_zip`
-- Should only contain relevant `zip` files should you want it to interact with the other programs in the repository properly as no error handling for that is in place for now
-- DO NOT RENAME SEC `zip` FILES OR REMOVE FROM DOWNLOADS FOLDER IF YOU REGULARLY RUN THIS PROGRAM
-    - `os.path.isfile(os.path.join(DOWNLOADS_FOLDER, file_name))` will re-download the same zip files should the names not match
+- Should only contain relevant `zip` files which are downloaded from EDGAR
+- It is strongly advised to not modify the file names in the download folder, as they will be re-downloaded on next the program run
     
 # Read Data
 
